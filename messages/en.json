@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "NEXUS — Fitness & Gym Management Platform",
+    "description": "NEXUS unites an AI coach, personalized workout & nutrition plans, camera-based motion tracking, and full gym management in one app."
+  },
+  "nav": {
+    "brand": "NEXUS",
+    "links": {
+      "features": "Features",
+      "audience": "Who it's for",
+      "howItWorks": "How it works",
+      "pricing": "Pricing",
+      "faq": "FAQ"
+    },
+    "cta": "Download App",
+    "langToggle": "العربية",
+    "themeToggle": "Dark mode"
+  },
+  "hero": {
+    "eyebrow": "Fitness, powered by AI",
+    "title": "Your next best self starts with a plan that gets you",
+    "subtitle": "NEXUS unites an AI coach, personalized nutrition, camera-based workout tracking, and full gym management — in one polished app.",
+    "ctaPrimary": "Start Free Today",
+    "ctaSecondary": "Watch Video",
+    "appStore": "Download on App Store",
+    "googlePlay": "Get it on Google Play",
+    "stats": {
+      "diet": "90+ diet plans",
+      "exercises": "500+ exercises",
+      "rating": "4.9 user rating"
+    },
+    "badge1": "Live AI Analysis",
+    "badge2": "Synced to your watch"
+  },
+  "statsStrip": {
+    "countries": "Countries",
+    "gyms": "Gyms",
+    "members": "Active Members",
+    "exercises": "Logged Exercises"
+  },
+  "features": {
+    "eyebrow": "Everything in one app",
+    "title": "Features built for every step of your journey",
+    "subtitle": "From your first workout to running a whole gym — NEXUS covers it all.",
+    "items": {
+      "aiCoach": {
+        "title": "AI Coach",
+        "description": "Live chat with an AI (Gemini) that analyzes your state and builds your plan automatically.",
+        "points": ["Real-time analysis", "Live mode during workouts", "Smart performance reports", "Human-coach chat"]
+      },
+      "nutrition": {
+        "title": "Smart Nutrition",
+        "description": "Scan your food with the camera and get its nutrition breakdown instantly.",
+        "points": ["AI camera food-scanner", "90+ ready diet plans", "Supplement tracker", "Full nutrition history"]
+      },
+      "workout": {
+        "title": "Smart Workout",
+        "description": "Track your motion and reps live via the camera during your session.",
+        "points": ["Camera motion & rep tracking", "Weekly Split Wizard", "500+ exercises", "Quick session logging"]
+      },
+      "wearables": {
+        "title": "Wearables",
+        "description": "Connect your smartwatch and monitor your heart rate in one health dashboard.",
+        "points": ["Smartwatch connectivity", "Heart-rate monitoring", "Apple Health / Google Fit"]
+      },
+      "gamification": {
+        "title": "Gamification",
+        "description": "Earn points and achievements with every goal you hit in the Gamma Club.",
+        "points": ["Points system", "Achievements & badges", "Friendly competition"]
+      },
+      "shop": {
+        "title": "NEXUS Shop",
+        "description": "Supplements and sports products with full order tracking.",
+        "points": ["Curated products", "Order tracking", "Secure Stripe checkout"]
+      },
+      "community": {
+        "title": "Community",
+        "description": "A social feed connecting you with coaches and other members.",
+        "points": ["Engage with members", "Share achievements", "Coach support"]
+      },
+      "gym": {
+        "title": "Gym Management",
+        "description": "A full dashboard to manage members, subscriptions, and financial reports.",
+        "points": ["Bulk import from Excel", "Subscription management", "Financial reports", "Coach management"]
+      }
+    }
+  },
+  "audience": {
+    "eyebrow": "Who it's for",
+    "title": "Built for three roles, one seamless experience",
+    "tabs": {
+      "trainees": {
+        "label": "Trainees",
+        "title": "Your personal plan, always with you",
+        "points": [
+          "Personalized workout & nutrition plans",
+          "An AI coach analyzing your progress in real time",
+          "Camera-based workout motion tracking",
+          "A library of 500+ exercises with video"
+        ]
+      },
+      "coaches": {
+        "label": "Coaches",
+        "title": "Tools that manage your clients, not the other way around",
+        "points": [
+          "Build client plans and monitor them live",
+          "A dashboard for every client's progress",
+          "Commission system and invoices",
+          "Adjust client nutrition remotely"
+        ]
+      },
+      "gyms": {
+        "label": "Gym Owners",
+        "title": "Your entire gym, in one dashboard",
+        "points": [
+          "Bulk-import players from Excel",
+          "Manage subscriptions, coaches, and products",
+          "Financial reports and invoices",
+          "Create and manage multiple gyms"
+        ]
+      }
+    }
+  },
+  "deepDive": {
+    "aiCoach": {
+      "eyebrow": "AI Coach",
+      "title": "A coach that understands you before you explain",
+      "description": "Powered by Google Gemini, it analyzes your performance live, auto-builds your plan, and stays with you in Live mode during workouts — with a human coach a message away.",
+      "chat": {
+        "user": "I felt tired during today's workout",
+        "ai": "Your heart rate dropped 8% below baseline. I'd suggest cutting weights by 10% today and prioritizing recovery."
+      }
+    },
+    "nutrition": {
+      "eyebrow": "Smart Nutrition",
+      "title": "Scan your plate, know everything about it",
+      "description": "An AI camera food-scanner, 90+ ready diet plans, and customizable templates — everything you need to track nutrition without the hassle.",
+      "macros": {
+        "protein": "Protein",
+        "carbs": "Carbs",
+        "fats": "Fats"
+      },
+      "scanner": "Analyzing your meal..."
+    },
+    "workout": {
+      "eyebrow": "Smart Workout",
+      "title": "Your weekly plan, built and tracked",
+      "description": "The Split Wizard builds your weekly program, and camera-based motion tracking (ML Kit) corrects your form in real time.",
+      "days": [
+        { "day": "Mon", "focus": "Chest & Triceps" },
+        { "day": "Tue", "focus": "Back & Biceps" },
+        { "day": "Wed", "focus": "Legs" },
+        { "day": "Thu", "focus": "Active Recovery" },
+        { "day": "Fri", "focus": "Shoulders & Core" }
+      ]
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "title": "Four steps, and you're in",
+    "steps": [
+      { "title": "Download the app", "description": "Get NEXUS from the App Store or Google Play." },
+      { "title": "Set your goal", "description": "Tell us your goal: muscle, weight loss, or performance." },
+      { "title": "Get your plan", "description": "The AI coach builds a personalized workout & nutrition plan." },
+      { "title": "Track & progress", "description": "Log your progress daily and get continuous smart adjustments." }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "A plan for every stage",
+    "subtitle": "Editable placeholder pricing — contact us for gym packages.",
+    "perMonth": "/mo",
+    "cta": "Get Started",
+    "ctaContact": "Contact Us",
+    "popular": "Most Popular",
+    "tiers": {
+      "trainee": {
+        "name": "Trainee",
+        "price": "Free",
+        "description": "For anyone starting with a core plan.",
+        "features": ["Basic workout plan", "500+ exercise library", "Progress tracking", "NEXUS community"]
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$29",
+        "description": "The full NEXUS AI experience.",
+        "features": ["Everything in Trainee", "Full AI Coach access", "90+ diet plans", "Camera motion tracking", "Priority support"]
+      },
+      "gym": {
+        "name": "Gym",
+        "price": "Contact Us",
+        "description": "For gym owners and professional coaches.",
+        "features": ["Full gym dashboard", "Unlimited members", "Coach commission system", "Financial reports"]
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "What people say",
+    "title": "Real results, from real people",
+    "items": [
+      { "name": "Sarah Ahmed", "role": "Trainee", "quote": "The AI coach completely changed how I train. My plan adapts every single week." },
+      { "name": "Khaled Al-Mutairi", "role": "Personal Coach", "quote": "I manage 40+ clients from one place. It's saved me an insane amount of time." },
+      { "name": "Mona Al-Shammari", "role": "Gym Owner", "quote": "The Excel bulk-import alone saved us weeks of manual data entry." }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Everything you need to know",
+    "items": [
+      { "q": "Is NEXUS available on iOS and Android?", "a": "Yes, NEXUS is available on both platforms with full feature parity." },
+      { "q": "How does the AI Coach work?", "a": "It uses Google Gemini to analyze your data and build workout & nutrition plans that adapt weekly." },
+      { "q": "Can I use it as a coach for multiple clients?", "a": "Yes, the Pro and Gym plans let you build plans and monitor clients in real time." },
+      { "q": "Does it support smartwatches?", "a": "Yes, it integrates with Apple Health, Google Fit, and most popular wearables." },
+      { "q": "How does gym management work?", "a": "A full dashboard for bulk player import, subscriptions, coaches, and financial reports." },
+      { "q": "Is my data secure?", "a": "All payments run through Stripe, and your data is protected to the highest security standards." }
+    ]
+  },
+  "ctaBand": {
+    "title": "Your next best self starts today",
+    "subtitle": "Join thousands of trainees, coaches, and gyms on NEXUS.",
+    "appStore": "Download on App Store",
+    "googlePlay": "Get it on Google Play"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Have a question? Reach out",
+    "subtitle": "Our team replies within one business day.",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "social": "Follow us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been received — we'll reply soon."
+    }
+  },
+  "footer": {
+    "tagline": "The smart fitness platform for trainees, coaches, and gym owners.",
+    "columns": {
+      "product": {
+        "title": "Product",
+        "features": "Features",
+        "pricing": "Pricing",
+        "coaches": "For Coaches",
+        "gyms": "For Gyms"
+      },
+      "company": {
+        "title": "Company",
+        "about": "About",
+        "contact": "Contact",
+        "faq": "FAQ"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+      }
+    },
+    "storeLabel": "Download the App",
+    "copyright": "© {year} NEXUS. All rights reserved."
+  }
+}
