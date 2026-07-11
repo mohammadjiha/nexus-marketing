@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Apple, PlayCircle, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Logo } from "@/components/ui/Logo";
+import { Link } from "@/i18n/navigation";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -10,25 +12,25 @@ export function Footer() {
     {
       title: t("columns.product.title"),
       items: [
-        { label: t("columns.product.features"), href: "#features" },
-        { label: t("columns.product.pricing"), href: "#pricing" },
-        { label: t("columns.product.coaches"), href: "#audience" },
-        { label: t("columns.product.gyms"), href: "#audience" },
+        { label: t("columns.product.features"), href: "/#features" },
+        { label: t("columns.product.pricing"), href: "/#pricing" },
+        { label: t("columns.product.coaches"), href: "/#audience" },
+        { label: t("columns.product.gyms"), href: "/#audience" },
       ],
     },
     {
       title: t("columns.company.title"),
       items: [
-        { label: t("columns.company.about"), href: "#top" },
-        { label: t("columns.company.contact"), href: "#contact" },
-        { label: t("columns.company.faq"), href: "#faq" },
+        { label: t("columns.company.about"), href: "/#top" },
+        { label: t("columns.company.contact"), href: "/#contact" },
+        { label: t("columns.company.faq"), href: "/#faq" },
       ],
     },
     {
       title: t("columns.legal.title"),
       items: [
-        { label: t("columns.legal.privacy"), href: "#" },
-        { label: t("columns.legal.terms"), href: "#" },
+        { label: t("columns.legal.privacy"), href: "/#" },
+        { label: t("columns.legal.terms"), href: "/#" },
       ],
     },
   ];
@@ -38,12 +40,10 @@ export function Footer() {
       <div className="container-px mx-auto max-w-7xl py-16">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <a href="#top" className="flex items-center gap-2 text-lg font-black text-ink">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-gradient text-sm font-black text-white">
-                N
-              </span>
+            <Link href="/#top" className="flex items-center gap-2 text-lg font-black text-ink">
+              <Logo />
               {nav("brand")}
-            </a>
+            </Link>
             <p className="mt-4 max-w-xs text-sm text-muted">{t("tagline")}</p>
             <div className="mt-6 flex items-center gap-3">
               <a
@@ -76,12 +76,12 @@ export function Footer() {
               <ul className="mt-4 space-y-3">
                 {col.items.map((item) => (
                   <li key={item.label}>
-                    <a
+                    <Link
                       href={item.href}
                       className="text-sm text-muted transition-colors hover:text-blue"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

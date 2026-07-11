@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Apple, PlayCircle, Play, Sparkles, Watch, Star } from "lucide-react";
+import { Apple, PlayCircle, Play, Sparkles, Watch, Star, MousePointerClick } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { PhoneMockup } from "@/components/visuals/PhoneMockup";
 import { fadeUp, staggerContainer } from "@/lib/motion";
@@ -88,7 +88,19 @@ export function Hero() {
           variants={fadeUp}
           className="relative flex justify-center"
         >
-          <PhoneMockup />
+          <div className="flex flex-col items-center">
+            <PhoneMockup />
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 1.4 }}
+              className="mt-4 flex items-center gap-1.5 text-xs font-medium text-muted"
+            >
+              <MousePointerClick size={13} className="text-blue" />
+              {t("tryHint")}
+            </motion.p>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, y: 10 }}

@@ -7,6 +7,8 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { LangToggle } from "@/components/ui/LangToggle";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { Logo } from "@/components/ui/Logo";
+import { Link } from "@/i18n/navigation";
 import { cx } from "@/lib/utils";
 
 export function Navbar() {
@@ -29,11 +31,12 @@ export function Navbar() {
   }, [open]);
 
   const links = [
-    { href: "#features", label: t("links.features") },
-    { href: "#audience", label: t("links.audience") },
-    { href: "#how-it-works", label: t("links.howItWorks") },
-    { href: "#pricing", label: t("links.pricing") },
-    { href: "#faq", label: t("links.faq") },
+    { href: "/#features", label: t("links.features") },
+    { href: "/#audience", label: t("links.audience") },
+    { href: "/#how-it-works", label: t("links.howItWorks") },
+    { href: "/#pricing", label: t("links.pricing") },
+    { href: "/#faq", label: t("links.faq") },
+    { href: "/gallery", label: t("links.gallery") },
   ];
 
   return (
@@ -49,22 +52,20 @@ export function Navbar() {
           scrolled ? "glass shadow-soft py-2" : "bg-transparent py-2"
         )}
       >
-        <a href="#top" className="flex items-center gap-2 text-lg font-black tracking-tight text-ink">
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-gradient text-sm font-black text-white">
-            N
-          </span>
+        <Link href="/#top" className="flex items-center gap-2 text-lg font-black tracking-tight text-ink">
+          <Logo />
           {t("brand")}
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-ink-2 transition-colors hover:text-blue"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -113,17 +114,16 @@ export function Navbar() {
               aria-label="Mobile"
             >
               {links.map((link, i) => (
-                <motion.a
+                <motion.div
                   key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.06, duration: 0.4 }}
-                  className="text-3xl font-bold text-ink"
                 >
-                  {link.label}
-                </motion.a>
+                  <Link href={link.href} onClick={() => setOpen(false)} className="text-3xl font-bold text-ink">
+                    {link.label}
+                  </Link>
+                </motion.div>
               ))}
               <div className="mt-4 flex items-center gap-3">
                 <LangToggle />

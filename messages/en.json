@@ -10,7 +10,8 @@
       "audience": "Who it's for",
       "howItWorks": "How it works",
       "pricing": "Pricing",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "gallery": "App Gallery"
     },
     "cta": "Download App",
     "langToggle": "العربية",
@@ -30,7 +31,18 @@
       "rating": "4.9 user rating"
     },
     "badge1": "Live AI Analysis",
-    "badge2": "Synced to your watch"
+    "badge2": "Synced to your watch",
+    "tryHint": "Tap below to try the app",
+    "tabs": {
+      "dashboard": "Dashboard",
+      "workout": "Workout",
+      "exercises": "Exercise Library",
+      "nutrition": "Nutrition",
+      "coach": "AI Coach",
+      "community": "Community",
+      "rewards": "Rewards",
+      "shop": "Shop"
+    }
   },
   "statsStrip": {
     "countries": "Countries",
@@ -235,6 +247,23 @@
       "submit": "Send Message",
       "success": "Thank you! Your message has been received — we'll reply soon."
     }
+  },
+  "gallery": {
+    "metaTitle": "App Gallery — NEXUS",
+    "metaDescription": "A gallery of real screens from the NEXUS app, organized by user type: players, coaches, and gym owners.",
+    "eyebrow": "Real screens",
+    "title": "See NEXUS from the inside",
+    "subtitle": "Actual screens from the app — organized by each user experience.",
+    "back": "Back to home",
+    "categories": {
+      "players": "Player Interface",
+      "coaches": "Coach Interface",
+      "gyms": "Gym Interface"
+    },
+    "comingSoon": "Screens for this section are on the way — coming soon.",
+    "closeLightbox": "Close",
+    "prevImage": "Previous image",
+    "nextImage": "Next image"
   },
   "footer": {
     "tagline": "The smart fitness platform for trainees, coaches, and gym owners.",
