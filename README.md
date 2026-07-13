@@ -33,11 +33,18 @@ Copy [`.env.example`](.env.example) to `.env.local` and fill in:
 
 | Variable | Purpose |
 | --- | --- |
-| `NEXT_PUBLIC_FORM_ENDPOINT` | Where the contact form POSTs (Formspree-style). Until set, the form just shows a success message without sending anywhere. |
+| `GMAIL_USER` | Gmail address the contact form sends to (via SMTP, see below). Server-only, never exposed to the browser. |
+| `GMAIL_APP_PASSWORD` | A [Google App Password](https://myaccount.google.com/apppasswords) for that account — not your regular Gmail password. Requires 2-Step Verification to be enabled first. |
 | `NEXT_PUBLIC_APP_STORE_URL` | App Store link (Hero, Footer, CTA band). |
 | `NEXT_PUBLIC_GOOGLE_PLAY_URL` | Google Play link (Hero, Footer, CTA band). |
-| `NEXT_PUBLIC_WHATSAPP_NUMBER` | Contact section WhatsApp link. |
-| `NEXT_PUBLIC_CONTACT_EMAIL` | Contact section email link. |
+| `NEXT_PUBLIC_WHATSAPP_NUMBER` | Contact/Support section WhatsApp link. |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | Contact/Support section email link. |
+
+The contact form (`src/sections/Contact.tsx`) POSTs to the internal
+[`/api/contact`](src/app/api/contact/route.ts) route, which sends an email via
+Gmail SMTP (`nodemailer`) to `GMAIL_USER`, with the submitter's address set as
+`replyTo`. Until `GMAIL_USER`/`GMAIL_APP_PASSWORD` are set, submissions fail
+with a 503 and the form shows an error state.
 
 Other things to swap before launch:
 
@@ -45,13 +52,9 @@ Other things to swap before launch:
   [`src/app/[locale]/layout.tsx`](src/app/%5Blocale%5D/layout.tsx),
   [`src/app/sitemap.ts`](src/app/sitemap.ts), and
   [`src/app/robots.ts`](src/app/robots.ts) with the real production domain.
-- **Pricing numbers**: [`messages/ar.json`](messages/ar.json) /
-  [`messages/en.json`](messages/en.json) → `pricing.tiers.*.price`.
 - **Social links**: `#` placeholders in `Footer.tsx` and `Contact.tsx`.
-- **Testimonial names/quotes**: `messages/*.json` → `testimonials.items`.
-- Real app screenshots can replace the coded phone mockup in
-  [`src/components/visuals/PhoneMockup.tsx`](src/components/visuals/PhoneMockup.tsx)
-  once available — it's currently a CSS/SVG mock, not a photo.
+- **Legal content**: `messages/*.json` → `legal.privacy` / `legal.terms` are a
+  generic starting template — have a lawyer review before real launch.
 
 ## Structure
 
@@ -59,14 +62,21 @@ Other things to swap before launch:
 messages/{ar,en}.json        i18n copy, one namespace per section
 src/
   app/[locale]/               routes, layout, metadata
+  app/[locale]/gallery/        real app screenshot gallery (players/coaches/gyms)
+  app/[locale]/privacy,terms,  legal + support pages
+    support,delete-account/
+  app/api/contact/             contact form email delivery (Gmail SMTP)
   middleware.ts                next-intl locale routing
   i18n/                         routing/navigation/request config
   components/ui/                Button, Card, Accordion, toggles, etc.
   components/layout/            Navbar, Footer
-  components/visuals/           PhoneMockup (coded app UI)
+  components/legal/             legal/support page layouts
+  components/gallery/           screenshot gallery grid + lightbox
+  components/visuals/           PhoneMockup (real app screenshots, swipeable tabs)
   sections/                     one file per landing-page section
-  lib/                          motion variants, fonts, utils
+  lib/                          motion variants, fonts, utils, gallery data
   styles/tokens.css             design-system CSS variables (light/dark)
+public/screenshots/            real app screenshots, by role (players/coaches/gyms)
 ```
 
 ## Notes

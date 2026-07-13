@@ -13,7 +13,6 @@ export function Footer() {
       title: t("columns.product.title"),
       items: [
         { label: t("columns.product.features"), href: "/#features" },
-        { label: t("columns.product.pricing"), href: "/#pricing" },
         { label: t("columns.product.coaches"), href: "/#audience" },
         { label: t("columns.product.gyms"), href: "/#audience" },
       ],

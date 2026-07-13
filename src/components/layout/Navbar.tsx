@@ -34,7 +34,6 @@ export function Navbar() {
     { href: "/#features", label: t("links.features") },
     { href: "/#audience", label: t("links.audience") },
     { href: "/#how-it-works", label: t("links.howItWorks") },
-    { href: "/#pricing", label: t("links.pricing") },
     { href: "/#faq", label: t("links.faq") },
     { href: "/gallery", label: t("links.gallery") },
   ];

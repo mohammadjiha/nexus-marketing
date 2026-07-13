@@ -9,7 +9,6 @@
       "features": "Features",
       "audience": "Who it's for",
       "howItWorks": "How it works",
-      "pricing": "Pricing",
       "faq": "FAQ",
       "gallery": "App Gallery"
     },
@@ -177,44 +176,6 @@
       { "title": "Track & progress", "description": "Log your progress daily and get continuous smart adjustments." }
     ]
   },
-  "pricing": {
-    "eyebrow": "Pricing",
-    "title": "A plan for every stage",
-    "subtitle": "Editable placeholder pricing — contact us for gym packages.",
-    "perMonth": "/mo",
-    "cta": "Get Started",
-    "ctaContact": "Contact Us",
-    "popular": "Most Popular",
-    "tiers": {
-      "trainee": {
-        "name": "Trainee",
-        "price": "Free",
-        "description": "For anyone starting with a core plan.",
-        "features": ["Basic workout plan", "500+ exercise library", "Progress tracking", "NEXUS community"]
-      },
-      "pro": {
-        "name": "Pro",
-        "price": "$29",
-        "description": "The full NEXUS AI experience.",
-        "features": ["Everything in Trainee", "Full AI Coach access", "90+ diet plans", "Camera motion tracking", "Priority support"]
-      },
-      "gym": {
-        "name": "Gym",
-        "price": "Contact Us",
-        "description": "For gym owners and professional coaches.",
-        "features": ["Full gym dashboard", "Unlimited members", "Coach commission system", "Financial reports"]
-      }
-    }
-  },
-  "testimonials": {
-    "eyebrow": "What people say",
-    "title": "Real results, from real people",
-    "items": [
-      { "name": "Sarah Ahmed", "role": "Trainee", "quote": "The AI coach completely changed how I train. My plan adapts every single week." },
-      { "name": "Khaled Al-Mutairi", "role": "Personal Coach", "quote": "I manage 40+ clients from one place. It's saved me an insane amount of time." },
-      { "name": "Mona Al-Shammari", "role": "Gym Owner", "quote": "The Excel bulk-import alone saved us weeks of manual data entry." }
-    ]
-  },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Everything you need to know",
@@ -245,7 +206,8 @@
       "email": "Email",
       "message": "Message",
       "submit": "Send Message",
-      "success": "Thank you! Your message has been received — we'll reply soon."
+      "success": "Thank you! Your message has been received — we'll reply soon.",
+      "error": "Something went wrong. Please try again."
     }
   },
   "gallery": {
@@ -411,7 +373,6 @@
       "product": {
         "title": "Product",
         "features": "Features",
-        "pricing": "Pricing",
         "coaches": "For Coaches",
         "gyms": "For Gyms"
       },

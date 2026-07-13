@@ -13,22 +13,17 @@ export function Contact() {
 
   const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@nexus-app.com";
   const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "+966500000000";
-  const endpoint = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
-    if (!endpoint) {
-      setStatus("success");
-      form.reset();
-      return;
-    }
+    const data = Object.fromEntries(new FormData(form)) as Record<string, string>;
     setStatus("loading");
     try {
-      const res = await fetch(endpoint, {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: { Accept: "application/json" },
-        body: new FormData(form),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error("Request failed");
       setStatus("success");
@@ -155,7 +150,7 @@ export function Contact() {
           </Button>
           <p role="status" aria-live="polite" className="min-h-[1.2em] text-sm text-blue">
             {status === "success" && t("form.success")}
-            {status === "error" && "Something went wrong. Please try again."}
+            {status === "error" && t("form.error")}
           </p>
         </motion.form>
       </div>
