@@ -265,6 +265,146 @@
     "prevImage": "Previous image",
     "nextImage": "Next image"
   },
+  "legal": {
+    "back": "Back to home",
+    "updated": "Last updated: {date}",
+    "privacy": {
+      "metaTitle": "Privacy Policy — NEXUS",
+      "metaDescription": "How the NEXUS app collects, uses, and protects your data.",
+      "eyebrow": "Legal",
+      "title": "Privacy Policy",
+      "intro": "At NEXUS, we take your privacy seriously. This page explains what information we collect, how we use it, and when we share it.",
+      "sections": [
+        {
+          "heading": "Information We Collect",
+          "body": "We collect account details (name, email, phone number), fitness data (workouts, weight, body measurements, nutrition plans), usage data (how you interact with the app), and payment data — processed entirely through Stripe; we never store your card numbers on our servers."
+        },
+        {
+          "heading": "How We Use Your Information",
+          "body": "We use your data to provide and improve our services, personalize your AI Coach plans, enable communication with your coach or gym, process payments and subscriptions, and send important account-related notifications."
+        },
+        {
+          "heading": "Sharing Your Information",
+          "body": "We share your data with your coach or the gym you're enrolled with (if any), and trusted service providers we rely on to run the app (such as Stripe for payments and Google Gemini for AI Coach analysis). We never sell your personal data to third parties for marketing purposes."
+        },
+        {
+          "heading": "Data Security",
+          "body": "We use reasonable technical and organizational measures to protect your data from unauthorized access, loss, or misuse. That said, no method of transmission over the internet is 100% secure."
+        },
+        {
+          "heading": "Your Rights",
+          "body": "You can request access to your data, correct it, export it, or delete your account entirely at any time. See our Account Deletion page for full details."
+        },
+        {
+          "heading": "Children's Privacy",
+          "body": "The app is not directed at children under 16, and we do not knowingly collect data from this age group."
+        },
+        {
+          "heading": "Changes to This Policy",
+          "body": "We may update this policy from time to time. We'll notify you of any material changes through the app or by email."
+        },
+        {
+          "heading": "Contact Us",
+          "body": "For any privacy-related question, reach out via the email address at the bottom of this page."
+        }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Terms of Use — NEXUS",
+      "metaDescription": "The terms and conditions governing the use of the NEXUS app and services.",
+      "eyebrow": "Legal",
+      "title": "Terms of Use",
+      "intro": "By using the NEXUS app or website, you agree to the following terms. Please read them carefully.",
+      "sections": [
+        {
+          "heading": "Acceptance of Terms",
+          "body": "Using the app or website means you fully accept these terms. If you do not agree, please do not use the service."
+        },
+        {
+          "heading": "Description of Service",
+          "body": "NEXUS is a fitness and gym-management platform offering personalized workout and nutrition plans, an AI-powered coach, and tools for gym and coach management."
+        },
+        {
+          "heading": "User Accounts",
+          "body": "You are responsible for the accuracy of the information you provide and for keeping your login credentials confidential. Notify us immediately if you suspect any unauthorized use of your account."
+        },
+        {
+          "heading": "Subscriptions & Payments",
+          "body": "Some features require a paid subscription processed through Stripe. Subscriptions renew automatically unless canceled before the end of the current billing cycle. Refunds are at the discretion of your gym or coach unless otherwise stated."
+        },
+        {
+          "heading": "Acceptable Use",
+          "body": "You may not use the app for any unlawful purpose, attempt unauthorized access to our systems, or impersonate a coach or gym owner without authorization."
+        },
+        {
+          "heading": "Medical Disclaimer",
+          "body": "Content provided in NEXUS (workout plans, nutrition plans, and AI Coach recommendations) is for general guidance only and is not a substitute for professional medical advice. Consult your doctor before starting any new exercise program, especially if you have an existing health condition."
+        },
+        {
+          "heading": "Content & Intellectual Property",
+          "body": "All content, trademarks, and app design are owned by or licensed to NEXUS and may not be copied or redistributed without prior written permission."
+        },
+        {
+          "heading": "Limitation of Liability",
+          "body": "The service is provided \"as is\" without warranties of any kind, express or implied. We are not liable for any injury or damage resulting from the use of workout or nutrition plans without appropriate professional supervision where needed."
+        },
+        {
+          "heading": "Termination",
+          "body": "We may suspend or terminate your account if you violate these terms. You may also stop using the service and delete your account at any time."
+        },
+        {
+          "heading": "Changes to These Terms",
+          "body": "We may update these terms periodically. Continued use of the app after any change constitutes your acceptance of the updated terms."
+        },
+        {
+          "heading": "Contact Us",
+          "body": "For any legal inquiry, reach out via the email address at the bottom of this page."
+        }
+      ]
+    },
+    "support": {
+      "metaTitle": "Support — NEXUS",
+      "metaDescription": "Contact the NEXUS support team or browse frequently asked questions.",
+      "eyebrow": "Support",
+      "title": "How can we help?",
+      "intro": "Have a question or a problem with the app? Our team replies within one business day.",
+      "emailLabel": "Email us",
+      "whatsappLabel": "Chat on WhatsApp",
+      "faqTitle": "Frequently Asked Questions",
+      "faqBody": "Most common questions about subscriptions, the AI Coach, and wearables are answered on our homepage.",
+      "faqCta": "View FAQ",
+      "topicsTitle": "Common topics",
+      "topics": [
+        "Login issues",
+        "Subscriptions & billing",
+        "Workout & nutrition plans",
+        "Deleting your account"
+      ],
+      "deleteAccountCta": "Want to delete your account?"
+    },
+    "deleteAccount": {
+      "metaTitle": "Delete Account — NEXUS",
+      "metaDescription": "How to delete your account and data from the NEXUS app.",
+      "eyebrow": "Account",
+      "title": "Delete Your Account",
+      "intro": "We respect your right to delete your NEXUS account and data at any time.",
+      "steps": [
+        {
+          "title": "From within the app",
+          "body": "Open the NEXUS app → Settings → Account → Delete Account → confirm the deletion. Your data is removed within minutes."
+        },
+        {
+          "title": "If you can't access your account",
+          "body": "Email us from the address registered on your account requesting deletion, and we'll process your request within 30 days at most."
+        }
+      ],
+      "dataRemovedTitle": "What gets deleted",
+      "dataRemoved": "Your profile, workout and nutrition plans, progress and measurement history, messages and conversations, and any photos you've uploaded.",
+      "dataRetainedTitle": "What may be retained",
+      "dataRetained": "Billing and payment records may be kept for an additional period to comply with accounting and tax obligations, even after account deletion.",
+      "timeframe": "Deletion requests are processed within 30 business days at most."
+    }
+  },
   "footer": {
     "tagline": "The smart fitness platform for trainees, coaches, and gym owners.",
     "columns": {
@@ -279,12 +419,15 @@
         "title": "Company",
         "about": "About",
         "contact": "Contact",
-        "faq": "FAQ"
+        "faq": "FAQ",
+        "support": "Support",
+        "gallery": "App Gallery"
       },
       "legal": {
         "title": "Legal",
         "privacy": "Privacy Policy",
-        "terms": "Terms of Service"
+        "terms": "Terms of Service",
+        "deleteAccount": "Delete Account"
       }
     },
     "storeLabel": "Download the App",

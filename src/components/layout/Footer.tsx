@@ -24,13 +24,16 @@ export function Footer() {
         { label: t("columns.company.about"), href: "/#top" },
         { label: t("columns.company.contact"), href: "/#contact" },
         { label: t("columns.company.faq"), href: "/#faq" },
+        { label: t("columns.company.support"), href: "/support" },
+        { label: t("columns.company.gallery"), href: "/gallery" },
       ],
     },
     {
       title: t("columns.legal.title"),
       items: [
-        { label: t("columns.legal.privacy"), href: "/#" },
-        { label: t("columns.legal.terms"), href: "/#" },
+        { label: t("columns.legal.privacy"), href: "/privacy" },
+        { label: t("columns.legal.terms"), href: "/terms" },
+        { label: t("columns.legal.deleteAccount"), href: "/delete-account" },
       ],
     },
   ];
