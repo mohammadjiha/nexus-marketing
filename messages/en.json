@@ -247,7 +247,11 @@
         },
         {
           "heading": "Sharing Your Information",
-          "body": "We share your data with your coach or the gym you're enrolled with (if any), and trusted service providers we rely on to run the app (such as Stripe for payments and Google Gemini for AI Coach analysis). We never sell your personal data to third parties for marketing purposes."
+          "body": "We share your data with your coach or the gym you're enrolled with (if any), and trusted service providers we rely on to run the app (such as Stripe for payments and Google Gemini for AI Coach analysis). We do not sell your personal data. We do share device identifiers with our advertising partners, as described in the Advertising section below."
+        },
+        {
+          "heading": "Advertising",
+          "body": "The app displays ads served by Google AdMob. Google and its partners may use your device's advertising identifier, your IP address (to estimate a coarse location), and data about how you interact with the app and with ads — to serve ads, measure their performance, and prevent fraud. On iOS we ask for your permission through the App Tracking Transparency prompt before the advertising identifier is used; if you decline, the app keeps working in full with non-personalised ads. Users in the European Economic Area are shown a consent form before any ad loads. You can review how Google uses this data at policies.google.com/technologies/partner-sites"
         },
         {
           "heading": "Data Security",
