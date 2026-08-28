@@ -239,7 +239,11 @@
       "sections": [
         {
           "heading": "Information We Collect",
-          "body": "We collect account details (name, email, phone number), fitness data (workouts, weight, body measurements, nutrition plans), usage data (how you interact with the app), and payment data — processed entirely through Stripe; we never store your card numbers on our servers."
+          "body": "We collect account details (name, email, phone number), fitness data (workouts, weight, body measurements, nutrition plans, and \u2014 with your permission \u2014 your step count and other health readings; see the next section), usage data (how you interact with the app), and payment data — processed entirely through Stripe; we never store your card numbers on our servers."
+        },
+        {
+          "heading": "Health and Fitness Data",
+          "body": "With your permission, NEXUS reads your daily step count \u2014 either from your phone's built-in motion sensor, or from Apple Health / Health Connect if you connect them. If you connect a watch or a health app, we may also read your heart rate, sleep, and active calories burned. This data is used only to show your own progress and to calculate your fitness score inside the app. We never sell it, never use it for advertising, and never share it with advertisers or data brokers. Your daily step totals are stored on your device and with your account so your charts survive reinstalling the app. You can revoke the motion or health permission at any time in your phone's settings \u2014 the rest of the app keeps working, and those figures simply stop updating. Deleting your account deletes this data with it."
         },
         {
           "heading": "How We Use Your Information",
