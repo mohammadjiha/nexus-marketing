@@ -262,6 +262,10 @@
           "body": "We use reasonable technical and organizational measures to protect your data from unauthorized access, loss, or misuse. That said, no method of transmission over the internet is 100% secure."
         },
         {
+          "heading": "Data Retention and Deletion",
+          "body": "We keep your account data (profile, workouts and plans, weight and measurements, step totals and health readings) for as long as your account is active, because the app needs it to show your progress and let your coach follow it. We do not delete inactive accounts automatically; your data stays until you delete your account or ask us to. Your location is read on your device only, to check that you are inside your gym, and is never stored or sent to our servers. Group notifications sent by your gym are removed from the history automatically after 30 days. We never store payment card numbers (Stripe processes them); records of subscriptions and payments may be kept after your account is deleted for as long as accounting and tax obligations require. When you delete your account inside the app (Settings → Account → Delete account), we immediately delete your profile, all data linked to it, your gym membership link and your sign-in account. If you can't sign in, email us from your registered address and we will delete it within 30 days at most. The service providers we use (such as Google Firebase) may keep technical logs and backups for a limited period under their own policies before they are permanently erased."
+        },
+        {
           "heading": "Your Rights",
           "body": "You can request access to your data, correct it, export it, or delete your account entirely at any time. See our Account Deletion page for full details."
         },
